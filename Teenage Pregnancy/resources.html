@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teenage Pregnancy Awareness in the Philippines</title>
+    <link rel="stylesheet" href="../Teenage Pregnancy/style.css">    
+</head>
+<body>
+	<header>
+        <div class="container">
+            <h1>Teenage Pregnancy</h1>
+            <!-- Language Selector -->
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="tl">Tagalog</option>
+            </select>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="resources" class="resources">
+            <div class="container">
+                <h2>Resources for Pregnant Teenagers</h2>
+                
+                <h3>1. Healthcare Services</h3>
+                <p>Accessing proper healthcare during pregnancy is essential for the well-being of both the teenager and her baby. Here are some resources:</p>
+                <ul>
+                    <li>Local clinics and community health centers offering prenatal care</li>
+                    <li>Obstetricians and gynecologists specializing in adolescent healthcare</li>
+                    <li>Family planning clinics providing contraceptive counseling and services</li>
+                    <li>Government programs like Medicaid for low-income pregnant women</li>
+                </ul>
+                
+                <h3>2. Counseling and Support</h3>
+                <p>Pregnancy can be emotionally challenging for teenagers. These resources offer counseling and support:</p>
+                <ul>
+                    <li>Teen pregnancy support groups providing peer support and guidance</li>
+                    <li>Professional counselors and therapists specializing in adolescent issues</li>
+                    <li>Hotlines and helplines offering confidential support and information</li>
+                    <li>Online forums and communities where pregnant teenagers can share experiences</li>
+                </ul>
+                
+                <h3>3. Educational and Vocational Assistance</h3>
+                <p>Continuing education and career development are important for pregnant teenagers' future:</p>
+                <ul>
+                    <li>High schools with programs supporting pregnant and parenting students</li>
+                    <li>Alternative education options like online courses or GED programs</li>
+                    <li>Vocational training programs providing skills development and job placement assistance</li>
+                    <li>Scholarships and financial aid opportunities for young parents pursuing higher education</li>
+                </ul>
+                
+                <h3>4. Parenting Classes and Resources</h3>
+                <p>Preparing for parenthood involves learning practical skills and accessing resources:</p>
+                <ul>
+                    <li>Parenting classes covering topics such as newborn care, breastfeeding, and child development</li>
+                    <li>Parenting books, websites, and apps offering guidance and tips for new parents</li>
+                    <li>Community organizations providing baby supplies, diapers, and other essentials</li>
+                    <li>Childcare options and assistance programs for working parents</li>
+                </ul>
+                
+                <p>These resources aim to support pregnant teenagers and help them navigate their pregnancy journey with confidence and empowerment.</p>
+            </div>
+        </section>
+    
+        <section id="statistics" class="statistics">
+            <div class="container">
+                <h2>Teenage Pregnancy Statistics</h2>
+                <div class="infographic">
+                    <div class="stat">
+                        <h3>Percentage of Teenage Pregnancies by Age Group</h3>
+                        <div class="bar">
+                            <div class="bar-inner" style="width: 60%;"></div>
+                        </div>
+                        <p>Under 15: 10%</p>
+                        <p>15-17: 40%</p>
+                        <p>18-19: 50%</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Impact of Teenage Pregnancy on Education</h3>
+                        <div class="bar">
+                            <div class="bar-inner" style="width: 70%;"></div>
+                        </div>
+                        <p>Dropout Rate: 70%</p>
+                        <p>Completion Rate: 30%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interactive-tools" class="interactive-tools">
+            <div class="container">
+                <h2>Interactive Tools</h2>
+                <div class="tool">
+                    <h3>Due Date Calculator</h3>
+                    <p>Enter the date of your last menstrual period to estimate your due date:</p>
+                    <input type="date" id="last-menstrual-date">
+                    <button onclick="calculateDueDate()">Calculate Due Date</button>
+                    <p>Your estimated due date is: <span id="due-date-result"></span></p>
+                </div>
+                <div class="tool">
+                    <h3>Risk Assessment Quiz</h3>
+                    <p>Take this quiz to assess your risk factors for teenage pregnancy:</p>
+                    <label>
+                        Question 1: Are you sexually active?
+                        <input type="radio" name="question1" value="yes"> Yes
+                        <input type="radio" name="question1" value="no"> No
+                    </label>
+                    <label>
+                        Question 2: Do you use contraception regularly?
+                        <input type="radio" name="question2" value="yes"> Yes
+                        <input type="radio" name="question2" value="no"> No
+                    </label>
+                    <!-- Add more questions as needed -->
+                    <button onclick="calculateRiskAssessment()">Submit</button>
+                    <p>Your risk assessment result: <span id="risk-assessment-result"></span></p>
+                </div>
+                <!-- Add more interactive tools as needed -->
+            </div>
+        </section>
+</body>
+</html>
